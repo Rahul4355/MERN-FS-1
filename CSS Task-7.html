@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 7</title>
+    <style>
+        .inside{
+            background-color: #872657;
+            justify-content: center;
+            padding: 2% 20%;
+            margin: 0 5%;
+            align-items: center;
+        }
+        .outside{
+            background: #e04794;
+            justify-content: center;
+            padding: 2% 10%;
+            margin: 10% 20%;
+        }
+        .Register{
+            width: 320px;
+            padding: 3%;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outside">
+        <div class="inside">
+            <form>
+                <table>
+                    <tr>
+                        <td><label>Name:</label></td>
+                        <td><input type="text" placeholder="User Name" id="userId"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email:</label></td>
+                        <td><input type="email" placeholder="Email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password :</label></td>
+                        <td><input type="password" placeholder="Password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Phone Number :</label></td>
+                        <td><input type="text" placeholder="Name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender :</label></td>
+                        <td><input type="radio" name="gender" id="male">Male
+                            <input type="radio" name="gender" id="female">Female
+                            <input type="radio" name="gender" id="other">Other</td>
+                    </tr>
+                    <tr>
+                        <td><label>Language :</label></td>
+                        <td><select style="width: 150px" id="country">
+                                <option>Select Language</option>
+                                <option>English</option>
+                                <option>Hindi</option>
+                                <option>Telugu</option>
+                                <option>Tamil</option>
+                                <option>Kannada</option>
+                                <option>Malayalam</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="zipCode">Zip Code:</label></td>
+                        <td><input type="text" id="zipCode"></td>
+                    </tr>
+                    <tr>
+                        <td><label>About :</label></td>
+                        <td><textarea id="about"></textarea></td>
+                    </tr>
+                </table>
+                <button type="button" class="Register"><b>Register</b></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

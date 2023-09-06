@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Links Example</title>
+  <style>
+    .container {
+      border: 1px solid #666;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      display: inline;
+    }
+
+    ul li:not(:last-child):after {
+      content: " | ";
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Click any of the following links:</h3>
+    <ul>
+      <li><a href="https://example.com/new">Opens in New</a></li>
+      <li><a href="https://example.com/self">Opens in Self</a></li>
+      <li><a href="https://example.com/parent">Opens in Parent</a></li>
+      <li><a href="https://example.com/body">Opens in Body</a></li>
+      <li><a href="mailto:someone@example.com">Send email</a></li>
+    </ul>
+  </div>
+</body>
+</html>
